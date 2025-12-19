@@ -1,21 +1,35 @@
 # GitHub Pages Configuration
 title: GenAI Science Research
 description: Comprehensive analysis of Generative AI in Science, Materials Science, and Medicine
-theme: jekyll-theme-primer
+remote_theme: pages-themes/primer@v0.6.0
 
 # Mermaid support
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
 
 # Plugins
 plugins:
+  - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-github-metadata
+  - jekyll-relative-links
+
+# Relative links configuration
+relative_links:
+  enabled: true
+  collections: false
 
 # Exclude files
 exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - .bob-clipboard/
