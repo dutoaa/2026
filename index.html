@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GenAI Science Research 2025-2030</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #24292e;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header .subtitle {
+            font-size: 1.3em;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        
+        .hero h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 20px 10px;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-card .number {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .stat-card .label {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        .section {
+            margin: 40px 0;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .section h3 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin: 25px 0 15px 0;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            border: 2px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 25px;
+            transition: all 0.3s;
+        }
+        
+        .feature-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+            transform: translateY(-3px);
+        }
+        
+        .feature-card h4 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .feature-card li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .feature-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .predictions {
+            background: #f6f8fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .predictions h4 {
+            color: #764ba2;
+            margin-bottom: 15px;
+        }
+        
+        .predictions ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .predictions li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.05em;
+        }
+        
+        .predictions li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .navigation {
+            background: #f6f8fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .navigation h3 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        
+        .nav-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .nav-link {
+            display: block;
+            padding: 15px 20px;
+            background: white;
+            border: 2px solid #e1e4e8;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .nav-link:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+            transform: translateX(5px);
+        }
+        
+        .footer {
+            background: #24292e;
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+        
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .header .subtitle {
+                font-size: 1.1em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧬 Generative AI in Science</h1>
+            <p class="subtitle">Materials Science & Medicine: 2025 Progress & 2026-2030 Predictions</p>
+        </div>
+        
+        <div class="content">
+            <div class="hero">
+                <h2>📄 Comprehensive Research Report</h2>
+                <p style="font-size: 1.2em; margin: 20px 0; color: #555;">
+                    An in-depth analysis of how Generative AI is transforming scientific discovery, 
+                    materials innovation, and medical breakthroughs
+                </p>
+                <a href="GenAI_Science_Predictions_2025-2030.md" class="cta-button">📖 Read Full Report</a>
+                <a href="https://github.com/dutoaa/2026" class="cta-button" style="background: linear-gradient(135deg, #24292e 0%, #444 100%);">
+                    💻 View on GitHub
+                </a>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="number">11,000+</div>
+                    <div class="label">Words of Analysis</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">10+</div>
+                    <div class="label">Mermaid Diagrams</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">3</div>
+                    <div class="label">Core Domains</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">2025-2030</div>
+                    <div class="label">Prediction Timeline</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>🔬 Core Research Domains</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <h4>🧪 General Science</h4>
+                        <ul>
+                            <li>Autonomous research systems</li>
+                            <li>ScienceGPT foundation models</li>
+                            <li>AutoLab platforms</li>
+                            <li>AI-driven hypothesis generation</li>
+                            <li>Real-time knowledge synthesis</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4>⚛️ Materials Science</h4>
+                        <ul>
+                            <li>MatGPT inverse design</li>
+                            <li>Room-temperature superconductors</li>
+                            <li>Sustainable materials discovery</li>
+                            <li>Smart & programmable matter</li>
+                            <li>Quantum materials innovation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4>💊 Medicine</h4>
+                        <ul>
+                            <li>DrugGPT drug discovery</li>
+                            <li>Med-PaLM 3 diagnostics</li>
+                            <li>Precision medicine platforms</li>
+                            <li>Gene therapy optimization</li>
+                            <li>AI-designed therapeutics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>📈 Key Predictions by 2030</h2>
+                <div class="predictions">
+                    <h4>🎯 Transformative Achievements</h4>
+                    <ul>
+                        <li><strong>80%</strong> of new materials discovered through AI-first approaches</li>
+                        <li><strong>70%</strong> reduction in cancer mortality (vs. 2020 baseline)</li>
+                        <li><strong>5-10x</strong> faster research productivity across all domains</li>
+                        <li><strong>$180B</strong> GenAI scientific tools market size</li>
+                        <li><strong>$2.3T</strong> market for AI-discovered products</li>
+                        <li><strong>15M+</strong> lives saved annually by AI medicine</li>
+                        <li><strong>95%</strong> of researchers using AI tools daily</li>
+                        <li><strong>50+</strong> previously incurable diseases now treatable</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>📊 Document Features</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <h4>📅 2025 Year in Review</h4>
+                        <ul>
+                            <li>Major breakthroughs timeline</li>
+                            <li>Technology maturity assessment</li>
+                            <li>Key statistics and metrics</li>
+                            <li>Market growth analysis</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4>🔮 Year-by-Year Predictions</h4>
+                        <ul>
+                            <li>2026-2030 detailed milestones</li>
+                            <li>Cross-domain convergence</li>
+                            <li>Quantitative projections</li>
+                            <li>Technology roadmaps</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4>📉 Visual Analytics</h4>
+                        <ul>
+                            <li>Mermaid timelines & flowcharts</li>
+                            <li>Comparison tables</li>
+                            <li>Market growth charts</li>
+                            <li>Technology mindmaps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navigation">
+                <h3>🚀 Quick Navigation</h3>
+                <div class="nav-links">
+                    <a href="GenAI_Science_Predictions_2025-2030.md#2025-year-in-review" class="nav-link">
+                        2025 Year in Review
+                    </a>
+                    <a href="GenAI_Science_Predictions_2025-2030.md#generative-ai-in-general-science" class="nav-link">
+                        General Science
+                    </a>
+                    <a href="GenAI_Science_Predictions_2025-2030.md#generative-ai-in-materials-science" class="nav-link">
+                        Materials Science
+                    </a>
+                    <a href="GenAI_Science_Predictions_2025-2030.md#generative-ai-in-medicine" class="nav-link">
+                        Medicine
+                    </a>
+                    <a href="GenAI_Science_Predictions_2025-2030.md#cross-domain-convergence" class="nav-link">
+                        Cross-Domain Convergence
+                    </a>
+                    <a href="GenAI_Science_Predictions_2025-2030.md#2026-2030-predictions" class="nav-link">
+                        2026-2030 Predictions
+                    </a>
+                    <a href="GenAI_Science_Predictions_2025-2030.md#challenges-and-limitations" class="nav-link">
+                        Challenges & Limitations
+                    </a>
+                    <a href="GenAI_Science_Predictions_2025-2030.md#recommendations" class="nav-link">
+                        Recommendations
+                    </a>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>📚 About This Research</h2>
+                <p style="font-size: 1.1em; line-height: 1.8; color: #555;">
+                    <strong>Document Version:</strong> 1.0<br>
+                    <strong>Date:</strong> December 19, 2025<br>
+                    <strong>Classification:</strong> Comprehensive Analysis & Future Predictions<br><br>
+                    This research provides evidence-based predictions on how Generative AI will transform 
+                    scientific discovery, materials innovation, and medical breakthroughs over the next five years. 
+                    Based on 2025 developments and emerging trends, we project significant breakthroughs through 2030 
+                    that will fundamentally reshape research methodologies, drug discovery, materials design, and clinical practice.
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p style="margin-bottom: 10px;">
+                <strong>GenAI Science Research Documentation</strong>
+            </p>
+            <p>
+                View source on <a href="https://github.com/dutoaa/2026">GitHub</a> | 
+                Last Updated: December 19, 2025
+            </p>
+        </div>
+    </div>
+</body>
+</html>
