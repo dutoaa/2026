@@ -1,7 +1,13 @@
 # GitHub Pages Configuration
 title: GenAI Science Research
-description: Comprehensive analysis of Generative AI in Science, Materials Science, and Medicine
+description: Comprehensive analysis of Generative AI in Science, Materials Science, and Medicine (2025-2030)
+baseurl: ""
+url: ""
 remote_theme: pages-themes/primer@v0.6.0
+
+# Site settings
+author: AI Research Analysis
+lang: en
 
 # Mermaid support
 markdown: kramdown
@@ -33,3 +39,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .bob-clipboard/
+  - "*.docx"
+  - "~$*"
