@@ -1,0 +1,21 @@
+# GitHub Pages Configuration
+title: GenAI Science Research
+description: Comprehensive analysis of Generative AI in Science, Materials Science, and Medicine
+theme: jekyll-theme-primer
+
+# Mermaid support
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+
+# Exclude files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
