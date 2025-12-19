@@ -797,30 +797,24 @@ The future of science is not AI versus humans—it is AI and humans, working tog
 
 ### Key Publications and Resources
 
-#### General AI in Science
-
-1. **Nature (2025).** "Autonomous Research Systems: The Future of Scientific Discovery." *Nature*, 625(7995), 234-245. DOI: 10.1038/s41586-025-xxxxx
-
-2. **Science (2025).** "Foundation Models for Scientific Reasoning: Capabilities and Limitations." *Science*, 380(6645), 789-801. DOI: 10.1126/science.xxxxx
-
-3. **Wang, H. et al. (2025).** "ScienceGPT: A Multi-Modal Foundation Model for Scientific Discovery." *arXiv preprint* arXiv:2501.xxxxx
-
-4. **Chen, L. et al. (2025).** "Autonomous Laboratories: Design, Implementation, and Performance." *Nature Protocols*, 20, 1234-1267. DOI: 10.1038/nprot.2025.xxx
-
 #### Materials Science
 
-5. **DeepMind (2025).** "MatGPT: Generative Pre-trained Transformer for Materials Discovery." *Nature Materials*, 24, 456-470. DOI: 10.1038/nmat.2025.xxx
+1. **Merchant, A. et al. (2023).** "Scaling deep learning for materials discovery." *Nature*, 624(7990), 80-85. DOI: [10.1038/s41586-023-06735-9](https://doi.org/10.1038/s41586-023-06735-9)
 
-6. **Merchant, A. et al. (2025).** "Scaling Deep Learning for Materials Discovery." *Nature*, 624(7992), 80-85. DOI: 10.1038/s41586-024-xxxxx
-
-7. **Zhang, Y. et al. (2025).** "AI-Driven Discovery of Room-Temperature Superconductors." *Physical Review Letters*, 134, 087001. DOI: 10.1103/PhysRevLett.134.xxxxx
-
-8. **Materials Genome Initiative (2025).** "Annual Report: AI-Accelerated Materials Innovation." U.S. Department of Energy.
+2. **Chen, W. et al. (2023).** "MatGPT: A Vane of Materials Informatics from Past, Present, to Future." *Advanced Materials*, 35(48), 2306733. DOI: [10.1002/adma.202306733](https://doi.org/10.1002/adma.202306733)
 
 #### Medicine and Drug Discovery
 
-9. **Jumper, J. et al. (2025).** "AlphaFold 3: Accurate Prediction of Protein-Ligand Complexes." *Nature*, 626(7998), 123-135. DOI: 10.1038/s41586-025-xxxxx
+3. **Abramson, J. et al. (2024).** "Accurate structure prediction of biomolecular interactions with AlphaFold 3." *Nature*, 630, 493-500. DOI: [10.1038/s41586-024-07487-w](https://doi.org/10.1038/s41586-024-07487-w)
 
-10. **Insilico Medicine (2025).** "DrugGPT: End-to-End AI Drug Discovery Platform." *Nature Biotechnology*, 43, 567-580. DOI: 10.1038/nbt.2025.xxx
+4. **Singhal, K. et al. (2023).** "Large language models encode clinical knowledge." *Nature*, 620, 172-180. DOI: [10.1038/s41586-023-06291-2](https://doi.org/10.1038/s41586-023-06291-2)
 
-11. **Singhal, K. et al. (2025).** "Med-PaLM 3: Large Language Models for Clinical Medicine." *The Lancet Digital Health*, 7(3), e234-e245. DOI: 10.1016/S2589-7500(25)xxxx
+5. **Singhal, K. et al. (2023).** "Towards Expert-Level Medical Question Answering with Large Language Models." *arXiv preprint* arXiv:2305.09617. [https://arxiv.org/abs/2305.09617](https://arxiv.org/abs/2305.09617)
+
+6. **Insilico Medicine.** AI-driven drug discovery platform using PandaOmics and Chemistry42. First AI-discovered drug (INS018_055/Rentosertib) entered Phase II clinical trials in 2023. [https://insilico.com](https://insilico.com)
+
+#### Autonomous Laboratories
+
+7. **Szymanski, N.J. et al. (2023).** "An autonomous laboratory for the accelerated synthesis of novel materials." *Nature*, 624, 86-91. DOI: [10.1038/s41586-023-06734-w](https://doi.org/10.1038/s41586-023-06734-w)
+
+8. **Boiko, D.A. et al. (2023).** "Autonomous chemical research with large language models." *Nature*, 624, 570-578. DOI: [10.1038/s41586-023-06792-0](https://doi.org/10.1038/s41586-023-06792-0)
